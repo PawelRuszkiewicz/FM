@@ -11,13 +11,17 @@ html {
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+  color: $black;
+  background: $bodyColor;
+}
+h1{
+  margin: 0;
 }
 .mainContener{
   max-width: 1200px;
   height: 100vh;
+  margin-top: 0;
   margin-right: auto;
-  margin-right: auto;
-background-color: aqua;
+  margin-left: auto;
+background-color: $white;
 }
