@@ -1,4 +1,5 @@
-# wtf-gulp-starter
+# gulp -starter
+
 
 `instal Node.js LTS version`
 
