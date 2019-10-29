@@ -1,41 +1,140 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>FromMi - firma odzieżowa</title>
-    <meta name="description" content="Description" />
 
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://pawelruszkiewicz.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://pawelruszkiewicz.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>FromMi - firma odzieżowa</title>
+  <meta name="description" content="Description" />
 
-    <link rel="manifest" href="manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <!-- Title -->
+  <meta property="og:title" content="" />
+  <!-- OPTIONAL description. 2-4 sentences. -->
+  <meta property="og:description" content="" />
+  <!-- full url with http(s) ie. https://pawelruszkiewicz.github.io/my-repo/ -->
+  <meta property="og:url" content="" />
+  <!-- full url to the image with http(s) ie. https://pawelruszkiewicz.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
+  <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/pwa/icons/icon-192x192.png" />
 
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <div class="mainContener">
-        <h1>frommi</h1>
+  <link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
 
-    <script src="js/main.js"></script>
-  </body>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <div class="Contener">
+    <div class="mainSlider">
+      <!-- slider na stronie -->
+      <div id="slider" class="slides">
+          <div class="slide">
+            <figure>
+              <img class="hidden" src="assets/img/cover.png" alt="Pierwszy slide">
+            </figure>
+            <div class="slide-description">
+              <h3 class="slide-header">Nie wczytuj wszystkich zdjęć na raz!</h3>
+              <p>Dzięki właściwości "load" slieder nie wczytuje wszystkich zdjęć podczas ładowania strony, co skutkuje brakiem blokowania innych zasobów i szybszym ukończeniem procesu renderowania strony.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <figure>
+              <img class="hidden" src="assets/img/cover.png" alt="Drugi slide">
+            </figure>
+            <div class="slide-description">
+              <h3 class="slide-header">Animacje CSS3</h3>
+              <p>Dzięki zastosowaniu animacji CSS3 nawet początkujący programista stron internetowych, może bez trudu pisać własne animacje dla pojedynczych slidów.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <figure>
+              <img class="hidden" src="assets/img/cover.png" alt="Trzeci slide">
+            </figure>
+            <div class="slide-description">
+              <h3 class="slide-header">Zatrzymaj po najechaniu</h3>
+              <p>Dzięki opcji "pause" po najechaniu kursorem slide zatrzyma się, co pozwoli podziwiać zdjęcia bądź przeczytać tekst w nim zawarty.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <figure>
+              <img class="hidden" src="assets/img/cover.png"alt="Czwarty slide">
+            </figure>
+            <div class="slide-description">
+              <h3 class="slide-header">Wywołaj slider w dowolnym momencie</h3>
+              <p>Konstrukcja slidera umożliwia uruchomienie rotacji zdjęć w dowolnym momencie, po wykonaniu akcji czy po wczytaniu się strony.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <figure>
+              <img class="hidden" src="assets/img/cover.png" alt="Piąty slide">
+            </figure>
+            <div class="slide-description">
+              <h3 class="slide-header">Mam już bibliotekę jQuery, nie chcę Comp!</h3>
+              <p>Jeżeli posiadasz już zainstalowaną bibliotekę jQuery, nie musisz pobierać i instalować biblioteki Comp. Slider został dostosowany do popularnej biblioteki jQuery.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <figure>
+              <img class="hidden" src="assets/img/cover.png" alt="Szósty slide">
+            </figure>
+            <div class="slide-description">
+              <h3 class="slide-header">Slider RWD</h3>
+              <p>Slider został dostosowany do urządzeń mobilnych.</p>
+            </div>
+          </div>
+
+          <nav role="pagination" class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </nav>
+          <nav role="pagination" class="arrows">
+            <button class="arrow-prev">❮</button>
+          </nav>
+          <nav role="pagination" class="arrows">
+            <button class="arrow-next">❯</button>
+          </nav>
+        </div>
+    </div>
+  </div>
+
+  <menu class="menu">
+<!-- menu na całą szerokość strony -->
+  </menu>
+
+
+  <main class="main">
+<!-- głowna traeś strony -->
+  </main>
+
+
+  <footer class="footer">
+<!-- stopka na całą szerokość strony -->
+  </footer>
+
+  </div>
+  <h1>frommi</h1>
+
+  <script src="js/main.js"></script>
+
+  <script src="js/comp.js"></script>
+<script src="js/slider.js"></script>
+<script>
+(function () {
+  new Slider("#slider3 .slide").options({
+      prev: "#slider3 nav button.arrow-prev",
+      next: "#slider3 nav button.arrow-next",
+      nav: "#slider3 nav.dots span",
+      animation: "fade"
+  }).init();
+})();
+</script>
+</body>
+
 </html>
