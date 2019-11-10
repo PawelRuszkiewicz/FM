@@ -1,22 +1,14 @@
 "use strict";
+const switchMenu = document.querySelector('.mainSwither__js');
 
-// service worker registration - remove if you're not going to use it
+switchMenu.addEventListener('click', (e) => {
+    const navigationList = document.querySelector('.navigation__cont--contUl-js');
 
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
-      // Registration was successful
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }, function(err) {
-      // registration failed :(
-      console.log('ServiceWorker registration failed: ', err);
-    });
-  });
-}
+    if (navigationList.classList.toggle('navigation__cont--contUl-visible')) {
+        switchMenu.innerHTML = '<span style="color: red;">x</span>';
+    }
+    else {
+        switchMenu.innerHTML = "&#9776";
+    };
 
-// place your code below
-
-
-console.log(`Hello world!`);
-
-
+})
