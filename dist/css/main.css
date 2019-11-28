@@ -704,7 +704,7 @@ p {
   transition: all 0.7s ease-out; }
 
 .submenu__item:hover {
-  border-bottom: solid 1px #6cc8e9; }
+  border-bottom: solid 3px #0cb112; }
 
 .submenu__item--a {
   margin-bottom: 0.5rem;
@@ -776,7 +776,7 @@ ol > li:hover > .submenu {
     font-size: 1rem;
     padding: 0; }
   .navigation__cont--item--a:hover {
-    color: #19adee; }
+    color: #088308; }
   .mainSwither__js {
     display: flex; } }
 
@@ -786,6 +786,12 @@ ol > li:hover > .submenu {
   margin-top: 0;
   margin-right: auto;
   margin-left: auto; }
+
+.textB {
+  font-weight: 600; }
+
+.textU {
+  text-decoration: underline; }
 
 .pictureNav {
   display: flex;
@@ -805,6 +811,10 @@ ol > li:hover > .submenu {
 
 .about_text {
   padding: 0.5rem; }
+  .about_text--p {
+    font-weight: 400; }
+  .about_text--pc {
+    line-height: 1rem; }
 
 .about_img {
   margin: 2rem 0 4rem;
@@ -814,42 +824,115 @@ ol > li:hover > .submenu {
   .about_img--cert {
     margin: 0.5rem; }
 
+.contact-cont {
+  display: flex;
+  flex-direction: column; }
+  .contact-cont__textContener {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px; }
+    @media screen and (max-width: 700px) {
+      .contact-cont__textContener {
+        flex-direction: column; } }
+    .contact-cont__textContener-part {
+      padding: 20px 0;
+      width: 50%; }
+      @media screen and (max-width: 700px) {
+        .contact-cont__textContener-part {
+          width: 100%;
+          padding: 25px; } }
+  .contact-cont__mailForm {
+    display: flex;
+    flex-direction: column;
+    padding: 10px; }
+
+.invisible {
+  display: none; }
+
+.contactContener {
+  padding: 1rem;
+  max-width: inherit;
+  text-align: center;
+  margin: 0 auto;
+  margin: 0; }
+
+fieldset {
+  text-align: left;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  padding: 1rem;
+  border: double 5px #8eb88b;
+  color: #414141;
+  font-weight: 600;
+  max-width: 100%; }
+
+#fs-frm {
+  margin-top: 5vh; }
+  #fs-frm-inputs {
+    display: flex;
+    flex-direction: column; }
+
+.formInput {
+  width: 100%;
+  height: 2rem;
+  font-size: 0.7rem;
+  background-color: #fafffa; }
+  .formInput-textarea {
+    height: 5rem; }
+  .formInput-submit {
+    margin: 0.5rem;
+    padding: 0.3rem;
+    width: 5rem;
+    height: 2rem;
+    border: solid 2px #4a8839; }
+    .formInput-submit:hover {
+      background-color: #fafffa; }
+
 /* footer-stopka  */
 .footer {
   min-height: 150px;
   background-color: #e5e4e2; }
   .footer--p {
-    line-height: 0.15rem; }
+    line-height: 0.5rem; }
   .footer--a {
     text-decoration: none;
     color: #414141;
     line-height: 2.1rem; }
     .footer--a:hover {
-      color: #4a8839; }
+      color: #4a8839;
+      font-weight: 600; }
     @media (max-width: 700px) {
       .footer--a {
         text-align: center; } }
+  .footer--img {
+    opacity: 0.7; }
+    .footer--img:hover {
+      opacity: 1; }
 
 .footer--contener {
   margin: 0 auto;
   max-width: 1000px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  font-size: 0.9rem; }
   @media (max-width: 700px) {
     .footer--contener {
       flex-direction: column;
       align-items: center; } }
   .footer--contener__pp {
-    max-width: 400px;
-    min-width: 300px;
+    max-width: 300px;
+    min-width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding: 10px; }
   .footer--contener__ps {
-    max-width: 400px;
-    min-width: 300px;
+    max-width: 300px;
+    min-width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -858,15 +941,24 @@ ol > li:hover > .submenu {
     @media (max-width: 700px) {
       .footer--contener__ps {
         flex-direction: column;
-        align-items: center; } }
+        align-items: center;
+        padding: 20px; } }
   .footer--contener__pl {
-    max-width: 200px;
-    min-width: 150px;
+    max-width: 400px;
+    min-width: 350px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding: 10px;
-    margin-top: 15px; }
+    padding-top: 25px; }
+  .footer--contener__plSocial {
+    max-width: 400px;
+    min-width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    border-top: 15px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -396,6 +396,8 @@ p {
   max-width: 100%;
   display: flex;
 }
+
+
 .menu-logo--img {
   max-width: 150px;
   max-height: 150px;
@@ -482,7 +484,7 @@ p {
   transition: all 0.7s ease-out;
 }
 .submenu__item:hover {
-  border-bottom: solid 1px #6cc8e9;
+  border-bottom: solid 3px #0cb112;
 }
 .submenu__item--a {
   margin-bottom: 0.5rem;
@@ -583,7 +585,7 @@ ol > li:hover > .submenu {
     padding: 0;
   }
   .navigation__cont--item--a:hover {
-    color: #19adee;
+    color: #088308;
   }
   .mainSwither__js {
     display: -webkit-box;
@@ -599,6 +601,12 @@ ol > li:hover > .submenu {
   margin-top: 0;
   margin-right: auto;
   margin-left: auto;
+}
+.textB{
+font-weight: 600;
+}
+.textU{
+  text-decoration: underline;
 }
 // fotki wyboru na stronie głównej***************************************************************************
 
@@ -627,6 +635,10 @@ ol > li:hover > .submenu {
   padding: 0.5rem;
 
   &--p {
+    font-weight: $fontWeightMainPageAbout;
+  }
+  &--pc{
+    line-height: 1rem;
   }
 }
 
@@ -639,6 +651,85 @@ ol > li:hover > .submenu {
     margin: 0.5rem;
   }
 }
+// ********************contakt form****************************
+.contact-cont{
+display: flex;
+flex-direction: column;
+  &__textContener{
+display:flex;
+flex-direction: row;
+justify-content: space-between;
+padding:10px;
+  @media screen and (max-width: $mediaScreenWidth) {
+    flex-direction: column;
+  }
+    &-part{
+padding: 20px 0;
+width: 50%;
+@media screen and (max-width: $mediaScreenWidth) {
+  width: 100%;
+  padding: 25px;
+
+}
+    }
+  }
+  &__mailForm{
+display: flex;
+flex-direction: column;
+padding: 10px;
+  }
+}
+.invisible {
+  display: none;
+}
+.contactContener {
+  padding: 1rem;
+  max-width: inherit;
+  text-align: center;
+  margin: 0 auto;
+  margin:0;
+}
+fieldset {
+  text-align: left;
+  margin-inline-start: 0;
+  margin-block-end: 0;
+  padding: 1rem;
+  border: double 5px $lineColorInContactForm;
+  color: $bodyTextColor;
+  font-weight: 600;
+  max-width: 100%;
+}
+
+#fs-frm {
+  margin-top: 5vh;
+  &-inputs {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.formInput {
+  width: 100%;
+  height: 2rem;
+  font-size: 0.7rem;
+  background-color: $menuColor;
+  &-textarea {
+    height: 5rem;
+  }
+  &-submit {
+    margin: 0.5rem;
+    padding: 0.3rem;
+    width: 5rem;
+    height: 2rem;
+    border: solid 2px $naviHover;
+    &:hover {
+      background-color: $menuColor;
+    }
+  }
+}
+
+
+
+
 // *****************************
 
 /* footer-stopka  */
@@ -654,9 +745,16 @@ ol > li:hover > .submenu {
     line-height: $foter_line-height-a;
     &:hover {
       color: $naviHover;
+      font-weight: 600;
     }
     @media (max-width: $mediaScreenWidth) {
       text-align: center;}
+  }
+  &--img{
+    opacity: 0.7;
+    &:hover{
+      opacity: 1;
+    }
   }
 }
 
@@ -666,14 +764,15 @@ ol > li:hover > .submenu {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  font-size: $footerFontSize;
   @media (max-width: $mediaScreenWidth) {
     flex-direction: column;
     align-items: center;
   }
 // panel lewy oznaczony jako PP
   &__pp {
-    max-width: 400px;
-    min-width: 300px;
+    max-width: 300px;
+    min-width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -682,29 +781,42 @@ ol > li:hover > .submenu {
 
     }
   &__ps {
-    max-width: 400px;
-    min-width: 300px;
+    max-width: 300px;
+    min-width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     padding: 10px;
+
+
     @media (max-width: $mediaScreenWidth) {
       flex-direction: column;
       align-items: center;
+      padding: 20px;
+
     }
 
   }
   // panel prawy oznavczony jako pl
   &__pl {
-    max-width: 200px;
-    min-width: 150px;
+    max-width: 400px;
+    min-width: 350px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding: 10px;
-    margin-top: 15px;
+    padding-top: 25px;
 
+  }
+  &__plSocial{
+    max-width: 400px;
+    min-width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    border-top: 15px;
   }
 }
