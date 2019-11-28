@@ -619,7 +619,8 @@ p {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  border-top: 10px; }
+  border-top: 10px;
+  z-index: 10; }
 
 .menu_Contener {
   display: flex;
@@ -799,7 +800,10 @@ ol > li:hover > .submenu {
   flex-wrap: wrap;
   justify-content: space-around; }
   .pictureNav_item {
-    margin: 2rem; }
+    margin: 2rem;
+    opacity: 0.8; }
+    .pictureNav_item:hover {
+      opacity: 1; }
 
 .aboutCont {
   max-width: 1000px;
@@ -823,6 +827,43 @@ ol > li:hover > .submenu {
   flex-wrap: wrap; }
   .about_img--cert {
     margin: 0.5rem; }
+
+.instagram {
+  margin: 25px 0 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+  @media screen and (max-width: 700px) {
+    .instagram {
+      flex-direction: column; } }
+  .instagram--h2 {
+    font-weight: 200;
+    width: 100%; }
+  .instagram--fsec {
+    display: flex;
+    flex-direction: row; }
+    @media screen and (max-width: 700px) {
+      .instagram--fsec {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center; } }
+  .instagram--ssec {
+    display: flex;
+    flex-direction: row; }
+    @media screen and (max-width: 700px) {
+      .instagram--ssec {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center; } }
+  .instagram--secPhoto {
+    opacity: 0.7;
+    width: 250px;
+    height: 250px;
+    border: solid 1px #8eb88b; }
+    .instagram--secPhoto:hover {
+      opacity: 1; }
 
 .contact-cont {
   display: flex;
