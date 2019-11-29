@@ -742,8 +742,7 @@ ol > li > ul > li {
 ol > li:hover > .submenu {
   display: block;
   background-color: #fafffa;
-  position: absolute;
-  top: 3rem; }
+  position: absolute; }
 
 @media screen and (max-width: 700px) {
   ol > li:hover > .submenu {
@@ -936,7 +935,7 @@ fieldset {
     height: 2rem;
     border: solid 2px #4a8839; }
     .formInput-submit:hover {
-      background-color: #fafffa; }
+      background-color: #8eb88b; }
 
 /* footer-stopka  */
 .footer {

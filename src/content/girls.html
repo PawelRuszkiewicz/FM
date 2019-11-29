@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>FromMi - firma odzieżowa</title>
+  <meta name="description" content="Description" />
+
+  <!-- Title -->
+  <meta property="og:title" content="" />
+  <!-- OPTIONAL description. 2-4 sentences. -->
+  <meta property="og:description" content="" />
+  <!-- full url with http(s) ie. https://pawelruszkiewicz.github.io/my-repo/ -->
+  <meta property="og:url" content="" />
+  <!-- full url to the image with http(s) ie. https://pawelruszkiewicz.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
+  <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+
+  <link rel="manifest" href="manifest.json" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/pwa/icons/icon-192x192.png" />
+
+  <link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
+
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+
+  <nav class="menu">
+    <!-- menu na całą szerokość strony -->
+    <!-- logo na stronie -->
+    <div class="menu_Contener">
+      <div class="menu_logo">
+        <a href="index.php"><img src="assets/img/logoFrommi.png" alt="logo frommi" class="menu_logo--img"></a>
+      </div>
+
+      <!-- menu -->
+      <div class="menu_link">
+        <nav class="navigation">
+          <div class="navigation__cont">
+            <button class="mainSwither__js" aria-label="przycisk otwierający menu">&#9776</button>
+            <ol class="navigation__cont--contUl navigation__cont--contUl-js">
+              <li class="navigation__cont--item"><a href="about.php" class="navigation__cont--item--a">o nas</a></li>
+
+              <li class="navigation__cont--item"><a href="boys.php" class="navigation__cont--item--a">chłopcy</a>
+                <ul class="submenu">
+                  <li class="submenu__item"><a href="body-chlopiece.php" class="submenu__item--a">body</a></li>
+                  <li class="submenu__item"><a href="bluzy-chlopiece.php" class="submenu__item--a">bluzy</a></li>
+                  <li class="submenu__item"><a href="koszulki-chlopiece.php" class="submenu__item--a">koszulki</a></li>
+                  <li class="submenu__item"><a href="spodenki-chlopiece.php" class="submenu__item--a">spodenki</a></li>
+                </ul>
+              </li>
+
+              <li class="navigation__cont--item"><a href="girls.php" class="navigation__cont--item--a">dziewczynki</a>
+                <ul class="submenu">
+                  <li class="submenu__item"><a href="body-dziewczece.php" class="submenu__item--a">body</a></li>
+                  <li class="submenu__item"><a href="bluzy-dziewczece.php" class="submenu__item--a">bluzy</a></li>
+                  <li class="submenu__item"><a href="sukienki-dziewczece.php" class="submenu__item--a">sukienki</a></li>
+                  <li class="submenu__item"><a href="spodnie-dziewczece.php" class="submenu__item--a">spodnie</a></li>
+                </ul>
+              </li>
+
+              <li class="navigation__cont--item"><a href="contakt.php" class="navigation__cont--item--a">kontakt</a>
+              </li>
+            </ol>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+
+  </nav>
+
+
+
+
+  <!-- głowna traeś strony -->
+  <main class="main">
+    <h2 class="aboutCont_h2">NASZA OFERTA</h2>
+    <!-- contener do 2 obrazów 300x400 -->
+    <nav class="pictureNav">
+      <a href="boys.php"><img src="assets/img/main/bodyDziewczynki.png" alt="menu obrazkowe- wybór : ubranka dla chłopców"
+          class="pictureNav_item"></a>
+      <a href="girls.php"><img src="assets/img/main/bluzyDziewczynki.png" alt="menu obrazkowe- wybór : ubranka dla dziewczynek"
+          class="pictureNav_item"></a>
+          <a href="girls.php"><img src="assets/img/main/spodnieDziewczynki.png" alt="menu obrazkowe- wybór : ubranka dla dziewczynek"
+            class="pictureNav_item"></a>
+            <a href="girls.php"><img src="assets/img/main/sukienki.png" alt="menu obrazkowe- wybór : ubranka dla dziewczynek"
+              class="pictureNav_item"></a>
+    </nav>
+
+
+    <!-- foto z serwisu instagram jako sekcja  -->
+    <Section class="instagram">
+      <h2 class="instagram--h2"><a href="https://www.instagram.com/frommi_fashion/" class=" footer--a"
+          target="_blank">FromMi na Instagramie.</a></h2>
+      <div class="instagram--fsec">
+        <div class="instagram--secPhoto">
+          <a href="https://www.instagram.com/p/B5QfZt-F85P/" target="_blank" rel = "nofollow"><img src="assets/img/ins/inst1.png"
+              alt="instagram frommi "></a>
+        </div>
+
+        <div class="instagram--secPhoto">
+        <a href="https://www.instagram.com/p/B5FYAL-FztQ/" target="_blank" rel = "nofollow"><img src="assets/img/ins/inst2.jpg"
+            alt="instagram frommi "></a></div>
+      </div>
+
+
+      <div class="instagram--ssec">
+
+        <div class="instagram--secPhoto">
+          <a href="https://www.instagram.com/p/B4hgIJGFYPw/" target="_blank" rel = "nofollow"><img src="assets/img/ins/inst3.png"
+              alt="instagram frommi ">
+        </div>
+
+        <div class="instagram--secPhoto">
+        <a href="https://www.instagram.com/p/B5DUqFYFPVd/" target="_blank" rel = "nofollow"><img src="assets/img/ins/inst4.png"
+            alt="instagram frommi "></a></a></div>
+      </div>
+    </Section>
+  </main>
+
+  <!-- stopka na całą szerokość strony -->
+  <footer class="footer">
+    <div class="footer--contener">
+      <div class="footer--contener__pp">
+        <a href="polityka.php" rel="nofollow" class="footer--a">Polityka Prywatniści</a>
+        <a href="gwarancja.php" rel="nofollow" class="footer--a">Gwarancja i Zwroty</a>
+        <a href="realizacja.php" rel="nofollow" class="footer--a">Czas realizacji zamówień</a>
+        <a href="regulamin.php" rel="nofollow" class="footer--a">Regulamin dla kupujacych 1Koszyk</a>
+      </div>
+      <div class="footer--contener__ps">
+        <p class="footer--p">FPHU FromMi Maria Borowik</p>
+        <p class="footer--p">62-030 Luboń, ul.Sporna 9</p>
+        <p class="footer--p">NIP: PL6721528438</p>
+        <p class="footer--p">frommi.office@gmail.com</p>
+      </div>
+      <div class="footer--contener__pl">
+        <div class="fb-page" data-href="https://www.facebook.com/FPHU.FromMi/" data-tabs="oś czasu" data-width="350px"
+          data-height="120px" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false"
+          data-show-facepile="true">
+          <blockquote cite="https: //www.facebook .com / FPHU.FromMi / " class="fb-xfbml-parse-ignore"><a
+              href="https://www.facebook.com/FPHU.FromMi/"> FromMi </a></blockquote>
+        </div>
+        <div class="footer--contener__plSocial">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
