@@ -32,6 +32,13 @@ p {
   text-align: justify;
   line-height: 2rem;
 }
+.contact-a{
+  text-decoration: none;
+  color: $bodyTextColor;
+&:hover{
+  color: $naviHover;
+}
+}
 /* slider na górze strony  *********************************************************** */
 .mainSlider {
   border: 10px;
@@ -480,9 +487,9 @@ p {
   list-style-type: none;
   padding-bottom: 5px;
   margin-bottom: 1rem;
-  -webkit-transition: all 0.7s ease-out;
-  -o-transition: all 0.7s ease-out;
-  transition: all 0.7s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 .submenu__item:hover {
   border-bottom: solid 3px #0cb112;
