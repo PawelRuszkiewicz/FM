@@ -54,10 +54,11 @@
     // prawy panel obok kontenera foto- strona sprzedaży produktu.
 
   max-width: 400px;
-  padding:10px;
-  padding-top: 30px;
+padding:0 15px;
+
   @media screen and (max-width: $mediaScreenWidth) {
     flex-direction: column;
+    padding:8px;
   }
 }
 // opis produktu na stronie sprzedaży

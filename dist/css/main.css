@@ -348,11 +348,11 @@ template {
 
 .buyPanel {
   max-width: 400px;
-  padding: 10px;
-  padding-top: 30px; }
+  padding: 0 15px; }
   @media screen and (max-width: 700px) {
     .buyPanel {
-      flex-direction: column; } }
+      flex-direction: column;
+      padding: 8px; } }
 
 .productInfo {
   padding-top: 20px; }
