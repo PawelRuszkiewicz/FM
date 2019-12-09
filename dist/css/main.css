@@ -305,6 +305,58 @@ template {
 [hidden] {
   display: none; }
 
+.fotocontener {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px; }
+
+.minfoto {
+  display: flex;
+  flex-basis: row;
+  justify-content: flex-start; }
+  @media screen and (max-width: 700px) {
+    .minfoto {
+      justify-content: flex-end; } }
+
+.bigfoto {
+  width: 600px;
+  height: auto;
+  margin: auto; }
+  @media screen and (max-width: 700px) {
+    .bigfoto {
+      width: 100vw;
+      border: 0 auto; } }
+
+.mini-foto {
+  width: 80px;
+  height: auto;
+  margin: 5px; }
+  @media screen and (max-width: 700px) {
+    .mini-foto {
+      width: 40px;
+      border: 0 auto;
+      justify-content: flex-end; } }
+
+.main_SelProduct {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start; }
+  @media screen and (max-width: 700px) {
+    .main_SelProduct {
+      flex-direction: column; } }
+
+.buyPanel {
+  max-width: 400px;
+  padding: 10px;
+  padding-top: 30px; }
+  @media screen and (max-width: 700px) {
+    .buyPanel {
+      flex-direction: column; } }
+
+.productInfo {
+  padding-top: 20px; }
+
 html {
   box-sizing: border-box; }
 
@@ -807,6 +859,9 @@ ol > li:hover > .submenu {
   .pictureNav_item {
     margin: 2rem;
     opacity: 0.8; }
+    @media screen and (max-width: 700px) {
+      .pictureNav_item {
+        width: inherit; } }
     .pictureNav_item:hover {
       opacity: 1; }
 

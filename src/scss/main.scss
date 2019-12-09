@@ -1,5 +1,6 @@
 @import "_normalize";
 @import "_variables";
+@import "_fotocontener";
 
 html {
   box-sizing: border-box;
@@ -627,6 +628,11 @@ font-weight: 600;
   &_item {
     margin: 2rem;
     opacity: 0.8;
+    @media screen and (max-width: $mediaScreenWidth) {
+      width:inherit;
+
+    }
+
     &:hover{
       opacity: 1;
     }

@@ -1,0 +1,71 @@
+// style fotek produktu
+.fotocontener {
+    // lewy kontener z fotkami - strona sprzedażowa produktu
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+.minfoto {
+    // kontener zbiorczy miniaturek
+  display: flex;
+  flex-basis: row;
+  //    flex-wrap: wrap;
+  justify-content: flex-start;
+  @media screen and (max-width: $mediaScreenWidth) {
+    justify-content: flex-end;
+  }
+  &_img {
+    //   box miniaturki
+  }
+}
+.bigfoto {
+    // kontener wyswietlanego zdjęcia w szer 600px
+  width: 600px;
+  height: auto;
+  margin: auto;
+  @media screen and (max-width: $mediaScreenWidth) {
+    width: 100vw;
+    border: 0 auto;
+  }
+}
+.mini-foto {
+  width: 80px;
+  height: auto;
+  margin: 5px;
+  @media screen and (max-width: $mediaScreenWidth) {
+    width: 40px;
+    border: 0 auto;
+    justify-content: flex-end;
+  }
+}
+
+// stylowanie kontenera sprzedażowego produktu
+.main_SelProduct {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  @media screen and (max-width: $mediaScreenWidth) {
+    flex-direction: column;
+  }
+}
+.buyPanel {
+    // prawy panel obok kontenera foto- strona sprzedaży produktu.
+
+  max-width: 400px;
+  padding:10px;
+  padding-top: 30px;
+  @media screen and (max-width: $mediaScreenWidth) {
+    flex-direction: column;
+  }
+}
+// opis produktu na stronie sprzedaży
+.productInfo{
+padding-top: 20px;
+
+&_paragraf{
+
+
+}
+}
