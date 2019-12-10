@@ -2,148 +2,207 @@
 <html lang="pl">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>FromMi - firma odzieżowa</title>
-  <meta name="description" content="Description" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FromMi - firma odzieżowa</title>
+    <meta name="description" content="Description" />
 
-  <!-- Title -->
-  <meta property="og:title" content="" />
-  <!-- OPTIONAL description. 2-4 sentences. -->
-  <meta property="og:description" content="" />
-  <!-- full url with http(s) ie. https://pawelruszkiewicz.github.io/my-repo/ -->
-  <meta property="og:url" content="" />
-  <!-- full url to the image with http(s) ie. https://pawelruszkiewicz.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-  <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+    <!-- Title -->
+    <meta property="og:title" content="" />
+    <!-- OPTIONAL description. 2-4 sentences. -->
+    <meta property="og:description" content="" />
+    <!-- full url with http(s) ie. https://pawelruszkiewicz.github.io/my-repo/ -->
+    <meta property="og:url" content="" />
+    <!-- full url to the image with http(s) ie. https://pawelruszkiewicz.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
+    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
 
-  <link rel="manifest" href="manifest.json" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <link rel="apple-touch-icon" sizes="192x192" href="assets/pwa/icons/icon-192x192.png" />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="apple-touch-icon" sizes="192x192" href="assets/pwa/icons/icon-192x192.png" />
 
-  <link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
+    <link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
 
-  <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!--***********************************  KOSZYK 1CART **************************************** -->
+    <script id="onecart" src="https://frommi.v.1cart.eu/assets/front/embeded.bundle.js" async></script>
 </head>
 
 <body>
 
-  <nav class="menu">
-    <!-- menu na całą szerokość strony -->
-    <!-- logo na stronie -->
-    <div class="menu_Contener">
-      <div class="menu_logo">
-        <a href="index.php"><img src="assets/img/logoFrommi.png" alt="logo frommi" class="menu_logo--img"></a>
-      </div>
+    <nav class="menu">
+        <!-- menu na całą szerokość strony -->
+        <!-- logo na stronie -->
+        <div class="menu_Contener">
+            <div class="menu_logo">
+                <a href="index.php"><img src="assets/img/logoFrommi.png" alt="logo frommi" class="menu_logo--img"></a>
+            </div>
 
-      <!-- menu -->
-      <div class="menu_link">
-        <nav class="navigation">
-          <div class="navigation__cont">
-            <button class="mainSwither__js" aria-label="przycisk otwierający menu">&#9776</button>
-            <ol class="navigation__cont--contUl navigation__cont--contUl-js">
-              <li class="navigation__cont--item"><a href="about.php" class="navigation__cont--item--a">o nas</a></li>
+            <!-- menu -->
+            <div class="menu_link">
+                <nav class="navigation">
+                    <div class="navigation__cont">
+                        <button class="mainSwither__js" aria-label="przycisk otwierający menu">&#9776</button>
+                        <ol class="navigation__cont--contUl navigation__cont--contUl-js">
+                            <li class="navigation__cont--item"><a href="about.php" class="navigation__cont--item--a">o
+                                    nas</a></li>
 
-              <li class="navigation__cont--item"><a href="boys.php" class="navigation__cont--item--a">chłopcy</a>
-                <ul class="submenu">
-                  <li class="submenu__item"><a href="body-chlopiece.php" class="submenu__item--a">body</a></li>
-                  <li class="submenu__item"><a href="bluzy-chlopiece.php" class="submenu__item--a">bluzy</a></li>
-                  <li class="submenu__item"><a href="koszulki-chlopiece.php" class="submenu__item--a">koszulki</a></li>
-                  <li class="submenu__item"><a href="spodenki-chlopiece.php" class="submenu__item--a">spodenki</a></li>
-                </ul>
-              </li>
+                            <li class="navigation__cont--item"><a href="boys.php"
+                                    class="navigation__cont--item--a">chłopcy</a>
+                                <ul class="submenu">
+                                    <li class="submenu__item"><a href="body-chlopiece.php"
+                                            class="submenu__item--a">body</a></li>
+                                    <li class="submenu__item"><a href="bluzy-chlopiece.php"
+                                            class="submenu__item--a">bluzy</a></li>
+                                    <li class="submenu__item"><a href="koszulki-chlopiece.php"
+                                            class="submenu__item--a">koszulki</a></li>
+                                    <li class="submenu__item"><a href="spodenki-chlopiece.php"
+                                            class="submenu__item--a">spodenki</a></li>
+                                </ul>
+                            </li>
 
-              <li class="navigation__cont--item"><a href="girls.php" class="navigation__cont--item--a">dziewczynki</a>
-                <ul class="submenu">
-                  <li class="submenu__item"><a href="body-dziewczece.php" class="submenu__item--a">body</a></li>
-                  <li class="submenu__item"><a href="bluzy-dziewczece.php" class="submenu__item--a">bluzy</a></li>
-                  <li class="submenu__item"><a href="sukienki-dziewczece.php" class="submenu__item--a">sukienki</a></li>
-                  <li class="submenu__item"><a href="spodnie-dziewczece.php" class="submenu__item--a">spodnie</a></li>
-                </ul>
-              </li>
+                            <li class="navigation__cont--item"><a href="girls.php"
+                                    class="navigation__cont--item--a">dziewczynki</a>
+                                <ul class="submenu">
+                                    <li class="submenu__item"><a href="body-dziewczece.php"
+                                            class="submenu__item--a">body</a></li>
+                                    <li class="submenu__item"><a href="bluzy-dziewczece.php"
+                                            class="submenu__item--a">bluzy</a></li>
+                                    <li class="submenu__item"><a href="sukienki-dziewczece.php"
+                                            class="submenu__item--a">sukienki</a></li>
+                                    <li class="submenu__item"><a href="spodnie-dziewczece.php"
+                                            class="submenu__item--a">spodnie</a></li>
+                                </ul>
+                            </li>
 
-              <li class="navigation__cont--item"><a href="contakt.php" class="navigation__cont--item--a">kontakt</a>
-              </li>
-            </ol>
-          </div>
-        </nav>
-      </div>
-    </div>
+                            <li class="navigation__cont--item"><a href="contakt.php"
+                                    class="navigation__cont--item--a">kontakt</a>
+                            </li>
+                        </ol>
+                    </div>
+                </nav>
+            </div>
+        </div>
 
 
-  </nav>
+    </nav>
 
-  <!-- głowna traeś strony -->
-  <main class="main">
-        <h2>Nazwa sprzedawanego produkty nawe jeśli bardzo długa i możliew ze sie nie zmieści w kontenerze- do
-                pobrania z bd w PHP</h2>
-    <!-- ?stylowanie kontenera ze zdjęciami na stronie produktu dodany !!!  scss _fotocontener  ***************************************-->
+    <!-- głowna traeś strony -->
+    <main class="main">
+        <h2 class="SelPageProductName">Nazwa sprzedawanego produkty nawe jeśli bardzo długa i możliew ze sie nie zmieści
+            w kontenerze- do
+            pobrania z bd w PHP</h2>
+        <!-- ?stylowanie kontenera ze zdjęciami na stronie produktu dodany !!!  scss _fotocontener  ***************************************-->
+        <script>
 
-      <div class="main_SelProduct">
-        <section class="fotocontener">
+            const klikFotki = document.querySelector('.min-foto-js');
+            // const MaleFoto = document.querySelector("div.minefoto_max--js img").getAttribute("src");
+            const modifiImage = function(){
+                alert("kliknięto zdjęcie");
+            };
 
-          <div class="minefoto_max"> <img src="assets/img/sl01.png" class="bigfoto" alt="fotka"></div>
-          <div class="minfoto">
-            <!-- ?div z zdjciem generowany przez php , nazwa pliku zdjcia z bd i alt-->
-            <div class="minfoto_img"> <img src="assets/img/ins/inst1.png" class="mini-foto" alt="fotka"></div>
-            <div class="minfoto_img"> <img src="assets/img/ins/inst3.png" class="mini-foto" alt="fotka"></div>
-            <div class="minfoto_img"> <img src="assets/img/ins/inst4.png" class="mini-foto" alt="fotka"></div>
-            <div class="minfoto_img"> <img src="assets/img/ins/inst3.png" class="mini-foto" alt="fotka"></div>
-          </div>
+// klikFotki.addEventListener('click', modifiImage);
+//     alert("kliknięto zdjęcie");
+    // const MaleFoto = dokument.querySelector("div.minfoto_img img").getAttribute("src");
+    // const zamiana = document.querySelector("img.bigfoto");
+    // zamiana.setAttribute(MaleFoto);
+    // console.log(MaleFoto);
+
+
+
+        </script>
+        <div class="main_SelProduct">
+            <section class="fotocontener">
+
+                <div class="minefoto_max minefoto_max--js"> <img src="assets/img/sl01.png" class="bigfoto" alt="fotka">
+                </div>
+                <div class="minfoto">
+                    <!-- ?div z zdjciem generowany przez php , nazwa pliku zdjcia z bd i alt-->
+                    <div class="minfoto_img "> <img src="assets/img/ins/inst1.png" class="mini-foto mini-foto--js"
+                            alt="fotka"></div>
+                    <div class="minfoto_img"> <img src="assets/img/ins/inst3.png" class="mini-foto mini-foto--js"
+                            alt="fotka"></div>
+                    <div class="minfoto_img"> <img src="assets/img/ins/inst4.png" class="mini-foto mini-foto--js"
+                            alt="fotka"></div>
+                    <div class="minfoto_img"> <img src="assets/img/ins/inst3.png" class="mini-foto mini-foto--js"
+                            alt="fotka"></div>
+                </div>
+            </section>
+
+            <section class="buyPanel">
+                <!-- Prawa strona obok zdjęc produktu - strona sprzedażowa -->
+
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere placeat excepturi, soluta veniam
+                dignissimos
+                tempore doloremque suscipit, quasi aliquam dolorum, corrupti sit debitis at eligendi sequi laboriosam
+                nisi
+                recusandae ex aspernatur veritatis. Ullam temporibus debitis nostrum, exercitationem enim animi odit
+                repellat
+
+            </section>
+        </div>
+        <section class="productInfo">
+            <p class="productInfo_paragraf">
+                INFO O PRODUKCIE *** GENEROWANE Z BAZY DANYCH**** Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Veniam quaerat, ab, odit libero dolorum error ipsa ut neque dolores earum odio enim hic
+                praesentium amet doloremque voluptas? Quisquam earum voluptatibus odit id vel, a similique ratione natus
+                minus vitae eos quae nobis quaerat debitis asperiores necessitatibus architecto aspernatur sint dolores
+                quod autem voluptates. Repellendus neque debitis expedita ullam dignissimos vel magnam impedit quidem
+                magni ex iure doloremque, voluptatem voluptatibus reiciendis inventore tempora quod omnis nobis mollitia
+                dicta! Consequatur dolor delectus architecto eum molestiae, ea praesentium minima corporis, sequi
+                repellat pariatur excepturi voluptas neque commodi. Quo aliquam et quibusdam eos aut minima tempora,
+                consequatur ducimus modi nobis in aperiam blanditiis dicta? Iusto molestias ipsum, commodi neque dolorem
+                et rem similique, necessitatibus accusamus dicta, quo laudantium. Ullam commodi quam adipisci, voluptate
+                tempora vitae pariatur. Vero perspiciatis unde voluptatibus quod quos neque omnis placeat odit explicabo
+                officia soluta, iure cupiditate quibusdam ipsam! Excepturi, doloremque at quidem explicabo totam magnam
+                harum sunt facilis qui animi libero autem, dolore nihil consequatur odit, voluptatum mollitia ipsum ab
+                tempore. Excepturi, ab ipsam. Nemo vel ipsam deleniti, provident cum natus voluptas voluptate nobis
+                quas. Facere cupiditate odio veritatis laudantium culpa iste voluptatem, nemo hic ad modi quo pariatur
+                error consequuntur ipsam sed architecto expedita maxime! Quasi explicabo modi asperiores, ratione
+                architecto iure esse similique nostrum odio. Odit eveniet possimus ducimus expedita molestiae ipsum
+                quisquam beatae laudantium sit maiores minima ea, sapiente qui quibusdam autem non et optio quis vel
+                quas. Voluptatem repellendus quam numquam veritatis vel incidunt. Illo.
+            </p>
         </section>
 
-        <section class="buyPanel">
-          <!-- Prawa strona obok zdjęc produktu - strona sprzedażowa -->
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere placeat excepturi, soluta veniam dignissimos
-          tempore doloremque suscipit, quasi aliquam dolorum, corrupti sit debitis at eligendi sequi laboriosam nisi
-          recusandae ex aspernatur veritatis. Ullam temporibus debitis nostrum, exercitationem enim animi odit repellat
-          culpa maxime ea accusantium veritatis optio ducimus impedit officiis? Beatae a corrupti blanditiis natus
-          doloribus? Mollitia et explicabo corrupti voluptatum ratione enim, dicta fuga provident quae modi nihil
-          accusantium ea, culpa non eligendi fugiat eius ad eveniet ut aspernatur. Tempore ipsum placeat illum
-          cupiditate veniam? Officiis perspiciatis quasi mollitia eaque nisi cum molestias nemo quaerat, hic iste
-          facilis accusantium, inventore ipsum? Suscipit, neque necessitatibus possimus ipsum, pariatur porro nam illo
-          itaque saepe obcaecati dolore, aliquam excepturi sit reiciendis! Dolorum, saepe obcaecati ullam perferendis
-          esse facere quisquam alias nostrum! Ut velit iusto quia sapiente ex minima nam aut perspiciatis quisquam,
-          quidem voluptatibus eum. Atque totam vel, obcaecati quidem quas
-        </section>
-      </div>
-<section class="productInfo">
-  <p class="productInfo_paragraf">
-    INFO O PRODUKCIE ***  GENEROWANE Z BAZY DANYCH****  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam quaerat, ab, odit libero dolorum error ipsa ut neque dolores earum odio enim hic praesentium amet doloremque voluptas? Quisquam earum voluptatibus odit id vel, a similique ratione natus minus vitae eos quae nobis quaerat debitis asperiores necessitatibus architecto aspernatur sint dolores quod autem voluptates. Repellendus neque debitis expedita ullam dignissimos vel magnam impedit quidem magni ex iure doloremque, voluptatem voluptatibus reiciendis inventore tempora quod omnis nobis mollitia dicta! Consequatur dolor delectus architecto eum molestiae, ea praesentium minima corporis, sequi repellat pariatur excepturi voluptas neque commodi. Quo aliquam et quibusdam eos aut minima tempora, consequatur ducimus modi nobis in aperiam blanditiis dicta? Iusto molestias ipsum, commodi neque dolorem et rem similique, necessitatibus accusamus dicta, quo laudantium. Ullam commodi quam adipisci, voluptate tempora vitae pariatur. Vero perspiciatis unde voluptatibus quod quos neque omnis placeat odit explicabo officia soluta, iure cupiditate quibusdam ipsam! Excepturi, doloremque at quidem explicabo totam magnam harum sunt facilis qui animi libero autem, dolore nihil consequatur odit, voluptatum mollitia ipsum ab tempore. Excepturi, ab ipsam. Nemo vel ipsam deleniti, provident cum natus voluptas voluptate nobis quas. Facere cupiditate odio veritatis laudantium culpa iste voluptatem, nemo hic ad modi quo pariatur error consequuntur ipsam sed architecto expedita maxime! Quasi explicabo modi asperiores, ratione architecto iure esse similique nostrum odio. Odit eveniet possimus ducimus expedita molestiae ipsum quisquam beatae laudantium sit maiores minima ea, sapiente qui quibusdam autem non et optio quis vel quas. Voluptatem repellendus quam numquam veritatis vel incidunt. Illo.
-  </p>
-</section>
+    </main>
 
-  </main>
-
-  <!-- stopka na całą szerokość strony -->
-  <footer class="footer">
-    <div class="footer--contener">
-      <div class="footer--contener__pp">
-        <a href="polityka.php" rel="nofollow" class="footer--a">Polityka Prywatniści</a>
-        <a href="gwarancja.php" rel="nofollow" class="footer--a">Gwarancja i Zwroty</a>
-        <a href="realizacja.php" rel="nofollow" class="footer--a">Czas realizacji zamówień</a>
-        <a href="regulamin.php" rel="nofollow" class="footer--a">Regulamin dla kupujacych 1Koszyk</a>
-      </div>
-      <div class="footer--contener__ps">
-        <p class="footer--p">FPHU FromMi Maria Borowik</p>
-        <p class="footer--p">62-030 Luboń, ul.Sporna 9</p>
-        <p class="footer--p">NIP: PL6721528438</p>
-        <p class="footer--p">frommi.office@gmail.com</p>
-      </div>
-      <div class="footer--contener__pl">
-        <div class="fb-page" data-href="https://www.facebook.com/FPHU.FromMi/" data-tabs="oś czasu" data-width="350px"
-          data-height="120px" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false"
-          data-show-facepile="true">
-          <blockquote cite="https: //www.facebook .com / FPHU.FromMi / " class="fb-xfbml-parse-ignore"><a
-              href="https://www.facebook.com/FPHU.FromMi/"> FromMi </a></blockquote>
+    <!-- stopka na całą szerokość strony -->
+    <footer class="footer">
+        <div class="footer--contener">
+            <div class="footer--contener__pp">
+                <a href="polityka.php" rel="nofollow" class="footer--a">Polityka Prywatniści</a>
+                <a href="gwarancja.php" rel="nofollow" class="footer--a">Gwarancja i Zwroty</a>
+                <a href="realizacja.php" rel="nofollow" class="footer--a">Czas realizacji zamówień</a>
+                <a href="regulamin.php" rel="nofollow" class="footer--a">Regulamin dla kupujacych 1Koszyk</a>
+            </div>
+            <div class="footer--contener__ps">
+                <p class="footer--p">FPHU FromMi Maria Borowik</p>
+                <p class="footer--p">62-030 Luboń, ul.Sporna 9</p>
+                <p class="footer--p">NIP: PL6721528438</p>
+                <p class="footer--p">frommi.office@gmail.com</p>
+            </div>
+            <div class="footer--contener__pl">
+                <div class="fb-page" data-href="https://www.facebook.com/FPHU.FromMi/" data-tabs="oś czasu"
+                    data-width="350px" data-height="120px" data-small-header="false" data-adapt-container-width="false"
+                    data-hide-cover="false" data-show-facepile="true">
+                    <blockquote cite="https: //www.facebook .com / FPHU.FromMi / " class="fb-xfbml-parse-ignore"><a
+                            href="https://www.facebook.com/FPHU.FromMi/"> FromMi </a></blockquote>
+                </div>
+                <div class="footer--contener__plSocial">
+                </div>
+            </div>
         </div>
-        <div class="footer--contener__plSocial">
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script src="js/main.js"></script>
+    </footer>
+    <script src="js/main.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
 
+console.log("DOM został wczytany");
+console.log("Tutaj dopiero wyłapujemy elementy");
+
+});
+</script>
 </body>
 
 </html>

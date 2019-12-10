@@ -305,6 +305,12 @@ template {
 [hidden] {
   display: none; }
 
+.SelPageProductName {
+  padding-top: 10px; }
+  @media screen and (max-width: 700px) {
+    .SelPageProductName {
+      padding-top: 10vh; } }
+
 .fotocontener {
   display: flex;
   flex-direction: column;
@@ -316,7 +322,7 @@ template {
   justify-content: flex-start; }
   @media screen and (max-width: 700px) {
     .minfoto {
-      justify-content: flex-end; } }
+      justify-content: space-around; } }
 
 .bigfoto {
   width: 600px;
@@ -328,14 +334,13 @@ template {
       border: 0 auto; } }
 
 .mini-foto {
-  width: 80px;
+  width: 140px;
   height: auto;
   margin: 5px; }
   @media screen and (max-width: 700px) {
     .mini-foto {
-      width: 40px;
-      border: 0 auto;
-      justify-content: flex-end; } }
+      width: 20vw;
+      border: 0 auto; } }
 
 .main_SelProduct {
   display: flex;
@@ -352,10 +357,13 @@ template {
   @media screen and (max-width: 700px) {
     .buyPanel {
       flex-direction: column;
-      padding: 8px; } }
+      padding: 25px; } }
 
 .productInfo {
-  padding-top: 20px; }
+  padding: 20px; }
+  @media screen and (max-width: 700px) {
+    .productInfo {
+      padding: 25px; } }
 
 html {
   box-sizing: border-box; }

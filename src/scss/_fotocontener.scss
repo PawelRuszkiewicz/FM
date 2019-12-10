@@ -1,9 +1,18 @@
+.SelPageProductName{
+    padding-top: 10px;
+    @media screen and (max-width: $mediaScreenWidth) {
+        padding-top: 10vh;
+      }
+}
+
+
 // style fotek produktu
 .fotocontener {
     // lewy kontener z fotkami - strona sprzedażowa produktu
   display: flex;
   flex-direction: column;
   max-width: 600px;
+
 }
 .minfoto {
     // kontener zbiorczy miniaturek
@@ -12,7 +21,7 @@
   //    flex-wrap: wrap;
   justify-content: flex-start;
   @media screen and (max-width: $mediaScreenWidth) {
-    justify-content: flex-end;
+    justify-content: space-around;
   }
   &_img {
     //   box miniaturki
@@ -29,13 +38,13 @@
   }
 }
 .mini-foto {
-  width: 80px;
+  width: 140px;
   height: auto;
   margin: 5px;
   @media screen and (max-width: $mediaScreenWidth) {
-    width: 40px;
+    width: 20vw;
     border: 0 auto;
-    justify-content: flex-end;
+
   }
 }
 
@@ -58,13 +67,15 @@ padding:0 15px;
 
   @media screen and (max-width: $mediaScreenWidth) {
     flex-direction: column;
-    padding:8px;
+    padding:25px;
   }
 }
 // opis produktu na stronie sprzedaży
 .productInfo{
-padding-top: 20px;
-
+padding: 20px;
+@media screen and (max-width: $mediaScreenWidth) {
+    padding:25px;
+  }
 &_paragraf{
 
 
