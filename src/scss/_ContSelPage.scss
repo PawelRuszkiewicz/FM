@@ -1,0 +1,136 @@
+// kontener na produkty
+.sumCont{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    min-height: 55vw;
+    @media screen and (max-width: $mediaScreenWidth) {
+        margin-top: 50px;
+      }
+}
+// kontener produktu
+.ContSelProduct {
+    width: calc($szerProd + 20px);
+    min-height: 530px;
+    margin-top: 2rem;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: flex-start;
+    @media screen and (max-width: $mediaScreenWidth) {
+        flex-direction: column;
+        margin-top: auto;
+        margin-left: auto;
+        margin-right: auto;
+        width: $szerProdMobile;
+      }
+    // height: 200px;
+}
+
+// pojedynczy produkt
+.divOpis{
+width: $szerProd;
+
+@media screen and (max-width: $mediaScreenWidth) {
+
+    width: $szerProdMobile;
+  }
+    &-opisH2{
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+.divContSP {
+
+
+  &-divImg {
+    // kontener obrazka
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (max-width: $mediaScreenWidth) {
+        width: $szerProdMobile;
+      }
+  }
+  &-img {
+    // obrazek-zdjęcie
+width: $szerProd;
+@media screen and (max-width: $mediaScreenWidth) {
+    width: $szerProdMobile;
+  }
+
+  }
+}
+.opisSP{
+    width: $szerProd;
+    min-height: 130px;
+    color: black;
+    font-size: 1rem;
+    @media screen and (max-width: $mediaScreenWidth) {
+        width: $szerProdMobile;
+        font-size: 1rem;
+      }
+}
+.cenaZest{
+    border-bottom: 2px solid $rozdzialProd;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    &-p{
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+.rozmZest{
+display: flex;
+justify-content: flex-start;
+flex-direction: row;
+flex-wrap: wrap;
+max-width: $szerProd;
+height: 80px;
+margin-bottom: 5px;
+margin-top: 10px;
+@media screen and (max-width: $mediaScreenWidth) {
+    max-width: $szerProdMobile;
+
+  }
+    &-size{
+width: 35px;
+height: 35px;
+margin-top: 3px;
+margin-right: 5px;
+text-align: center;
+border: 1px solid $rozdzialProd;
+border-radius: 50%;
+
+    }
+    &-p{
+        margin: 0;
+        font-size: 14px;
+        text-align: center;
+    }
+
+}
+.zobacz{
+    border: 1px solid $rozdzialProd;
+    text-align: center;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    padding-top: 4px;
+    background-color: rgb(233, 79, 22);
+    &:hover{
+        background-color:$rozdzialProd;
+
+    }
+    &-a{
+        text-decoration: none;
+        font-weight: 900;
+
+        color: white;
+        &:hover{
+            color:black;;
+        }
+    }
+}

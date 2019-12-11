@@ -365,6 +365,114 @@ template {
     .productInfo {
       padding: 25px; } }
 
+.sumCont {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  min-height: 55vw; }
+  @media screen and (max-width: 700px) {
+    .sumCont {
+      margin-top: 50px; } }
+
+.ContSelProduct {
+  width: calc($szerProd + 20px);
+  min-height: 530px;
+  margin-top: 2rem;
+  padding: 10px;
+  display: flex;
+  flex-direction: column; }
+  @media screen and (max-width: 700px) {
+    .ContSelProduct {
+      flex-direction: column;
+      margin-top: auto;
+      margin-left: auto;
+      margin-right: auto;
+      width: 95vw; } }
+
+.divOpis {
+  width: 200px; }
+  @media screen and (max-width: 700px) {
+    .divOpis {
+      width: 95vw; } }
+  .divOpis-opisH2 {
+    font-size: 16px;
+    text-align: center; }
+
+.divContSP-divImg {
+  margin-left: auto;
+  margin-right: auto; }
+  @media screen and (max-width: 700px) {
+    .divContSP-divImg {
+      width: 95vw; } }
+
+.divContSP-img {
+  width: 200px; }
+  @media screen and (max-width: 700px) {
+    .divContSP-img {
+      width: 95vw; } }
+
+.opisSP {
+  width: 200px;
+  min-height: 130px;
+  color: black;
+  font-size: 1rem; }
+  @media screen and (max-width: 700px) {
+    .opisSP {
+      width: 95vw;
+      font-size: 1rem; } }
+
+.cenaZest {
+  border-bottom: 2px solid #2c7b16;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline; }
+  .cenaZest-p {
+    font-size: 16px;
+    font-weight: 600; }
+
+.rozmZest {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 200px;
+  height: 80px;
+  margin-bottom: 5px;
+  margin-top: 10px; }
+  @media screen and (max-width: 700px) {
+    .rozmZest {
+      max-width: 95vw; } }
+  .rozmZest-size {
+    width: 35px;
+    height: 35px;
+    margin-top: 3px;
+    margin-right: 5px;
+    text-align: center;
+    border: 1px solid #2c7b16;
+    border-radius: 50%; }
+  .rozmZest-p {
+    margin: 0;
+    font-size: 14px;
+    text-align: center; }
+
+.zobacz {
+  border: 1px solid #2c7b16;
+  text-align: center;
+  width: 60px;
+  height: 30px;
+  text-align: center;
+  padding-top: 4px;
+  background-color: #e94f16; }
+  .zobacz:hover {
+    background-color: #2c7b16; }
+  .zobacz-a {
+    text-decoration: none;
+    font-weight: 900;
+    color: white; }
+    .zobacz-a:hover {
+      color: black; }
+
 html {
   box-sizing: border-box; }
 
@@ -699,7 +807,8 @@ p {
 
 @media screen and (max-width: 700px) {
   .menu_Contener {
-    flex-direction: column; } }
+    flex-direction: column;
+    width: 100vw; } }
 
 .menu_logo {
   max-width: 100%;
