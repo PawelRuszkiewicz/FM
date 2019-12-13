@@ -390,7 +390,8 @@ template {
       width: 95vw; } }
 
 .divOpis {
-  width: 200px; }
+  width: 200px;
+  height: 80px; }
   @media screen and (max-width: 700px) {
     .divOpis {
       width: 95vw; } }
@@ -415,7 +416,8 @@ template {
   width: 200px;
   min-height: 130px;
   color: black;
-  font-size: 1rem; }
+  font-size: 1rem;
+  font-weight: 200; }
   @media screen and (max-width: 700px) {
     .opisSP {
       width: 95vw;
@@ -436,7 +438,6 @@ template {
   justify-content: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: 200px;
   height: 80px;
   margin-bottom: 5px;
   margin-top: 10px; }
@@ -449,8 +450,7 @@ template {
     margin-top: 3px;
     margin-right: 5px;
     text-align: center;
-    border: 1px solid #2c7b16;
-    border-radius: 50%; }
+    border: 1px solid #2c7b16; }
   .rozmZest-p {
     margin: 0;
     font-size: 14px;
@@ -459,7 +459,7 @@ template {
 .zobacz {
   border: 1px solid #2c7b16;
   text-align: center;
-  width: 60px;
+  width: 80px;
   height: 30px;
   text-align: center;
   padding-top: 4px;
@@ -471,6 +471,23 @@ template {
     font-weight: 900;
     color: white; }
     .zobacz-a:hover {
+      color: black; }
+
+.doKoszyka {
+  border: 1px solid #2c7b16;
+  text-align: center;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  padding-top: 5px;
+  background-color: #e94f16; }
+  .doKoszyka:hover {
+    background-color: #2c7b16; }
+  .doKoszyka-a {
+    text-decoration: none;
+    font-weight: 900;
+    color: white; }
+    .doKoszyka-a:hover {
       color: black; }
 
 html {

@@ -30,6 +30,7 @@
 // pojedynczy produkt
 .divOpis{
 width: $szerProd;
+height: 80px;;
 
 @media screen and (max-width: $mediaScreenWidth) {
 
@@ -38,6 +39,7 @@ width: $szerProd;
     &-opisH2{
         font-size: 16px;
         text-align: center;
+
     }
 }
 
@@ -66,6 +68,7 @@ width: $szerProd;
     min-height: 130px;
     color: black;
     font-size: 1rem;
+    font-weight: 200;
     @media screen and (max-width: $mediaScreenWidth) {
         width: $szerProdMobile;
         font-size: 1rem;
@@ -82,12 +85,14 @@ width: $szerProd;
         font-weight: 600;
     }
 }
+
+// style do rozmiaru ***********************************ROZMIAR
 .rozmZest{
 display: flex;
 justify-content: flex-start;
 flex-direction: row;
 flex-wrap: wrap;
-max-width: $szerProd;
+// max-width: $szerProd;
 height: 80px;
 margin-bottom: 5px;
 margin-top: 10px;
@@ -102,7 +107,7 @@ margin-top: 3px;
 margin-right: 5px;
 text-align: center;
 border: 1px solid $rozdzialProd;
-border-radius: 50%;
+// // border-radius: 50%;
 
     }
     &-p{
@@ -115,10 +120,32 @@ border-radius: 50%;
 .zobacz{
     border: 1px solid $rozdzialProd;
     text-align: center;
-    width: 60px;
+    width: 80px;
     height: 30px;
     text-align: center;
     padding-top: 4px;
+    background-color: rgb(233, 79, 22);
+    &:hover{
+        background-color:$rozdzialProd;
+
+    }
+    &-a{
+        text-decoration: none;
+        font-weight: 900;
+
+        color: white;
+        &:hover{
+            color:black;;
+        }
+    }
+}
+.doKoszyka{
+    border: 1px solid $rozdzialProd;
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    padding-top: 5px;
     background-color: rgb(233, 79, 22);
     &:hover{
         background-color:$rozdzialProd;

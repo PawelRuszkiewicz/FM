@@ -24,12 +24,15 @@
     <link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
 
     <link rel="stylesheet" href="css/main.css" />
-    <!--***********************************  KOSZYK 1CART **************************************** -->
+    <!-- ***********************************  KOSZYK 1CART **************************************** -->
     <script id="onecart" src="https://frommi.v.1cart.eu/assets/front/embeded.bundle.js" async></script>
+    <script> document.addEventListener("DOMContentLoaded", function (event) {
+            console.log("DOM został wczytany");
+        });
+    </script>
 </head>
 
 <body>
-
     <nav class="menu">
         <!-- menu na całą szerokość strony -->
         <!-- logo na stronie -->
@@ -89,28 +92,13 @@
 
     <!-- głowna traeś strony -->
     <main class="main">
-        <h2 class="SelPageProductName">Nazwa sprzedawanego produkty nawe jeśli bardzo długa i możliew ze sie nie zmieści
-            w kontenerze- do
+        <h2 class="SelPageProductName">Nazwa sprzedawanego produktu do
             pobrania z bd w PHP</h2>
         <!-- ?stylowanie kontenera ze zdjęciami na stronie produktu dodany !!!  scss _fotocontener  ***************************************-->
-        <script>
-
-            const klikFotki = document.querySelector('.min-foto-js');
-            // const MaleFoto = document.querySelector("div.minefoto_max--js img").getAttribute("src");
-            const modifiImage = function(){
-                alert("kliknięto zdjęcie");
-            };
-
-// klikFotki.addEventListener('click', modifiImage);
-//     alert("kliknięto zdjęcie");
-    // const MaleFoto = dokument.querySelector("div.minfoto_img img").getAttribute("src");
-    // const zamiana = document.querySelector("img.bigfoto");
-    // zamiana.setAttribute(MaleFoto);
-    // console.log(MaleFoto);
 
 
 
-        </script>
+
         <div class="main_SelProduct">
             <section class="fotocontener">
 
@@ -132,14 +120,46 @@
             <section class="buyPanel">
                 <!-- Prawa strona obok zdjęc produktu - strona sprzedażowa -->
 
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere placeat excepturi, soluta veniam
-                dignissimos
-                tempore doloremque suscipit, quasi aliquam dolorum, corrupti sit debitis at eligendi sequi laboriosam
-                nisi
-                recusandae ex aspernatur veritatis. Ullam temporibus debitis nostrum, exercitationem enim animi odit
-                repellat
+                WYBIERZ ROZMIAR:
+                <div class="rozmZest">
+                    <div class="rozmZest-size">
+                        <p class=" rozmZest-p">56</p>
+                    </div>
+                    <div class="rozmZest-size">
+                        <p class=" rozmZest-p">68</p>
+                    </div>
+                    <div class="rozmZest-size">
+                        <p class=" rozmZest-p">56</p>
+                    </div>
+                    <div class="rozmZest-size">
+                        <p class=" rozmZest-p">68</p>
+                    </div>
+                    <div class="rozmZest-size">
+                        <p class=" rozmZest-p">74</p>
+                    </div>
+                    <div class="rozmZest-size">
+                        <p class=" rozmZest-p">86</p>
+                    </div>
+                    <div class="rozmZest-size">
+                        <p class=" rozmZest-p">114</p>
+                    </div>
+                    <div class="rozmZest-size">
+                        <p class=" rozmZest-p">134</p>
+                    </div>
+                    <div class="rozmZest-size">
+                        <p class=" rozmZest-p">114</p>
+                    </div>
+                    <div class="rozmZest-size">
+                        <p class=" rozmZest-p">134</p>
+                    </div>
+                </div>
+                <div class="cenaZest">
+                    <p class="cenaZest-p">CENA: 40 zł.</p>
+                    <div class="doKoszyka"><a class="doKoszyka-a" href="plik.php">DO KOSZYKA</a></div>
+                </div>
 
-            </section>
+        </div>
+        </section>
         </div>
         <section class="productInfo">
             <p class="productInfo_paragraf">
@@ -195,14 +215,7 @@
         </div>
     </footer>
     <script src="js/main.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", function(event) {
 
-console.log("DOM został wczytany");
-console.log("Tutaj dopiero wyłapujemy elementy");
-
-});
-</script>
 </body>
 
 </html>

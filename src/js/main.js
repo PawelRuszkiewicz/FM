@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 const switchMenu = document.querySelector('.mainSwither__js');
 
 switchMenu.addEventListener('click', (e) => {
@@ -11,4 +11,5 @@ switchMenu.addEventListener('click', (e) => {
         switchMenu.innerHTML = "&#9776";
     };
 
-})
+});
+// **************************************************************************************
