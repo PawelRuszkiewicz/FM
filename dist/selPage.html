@@ -119,8 +119,23 @@
 
             <section class="buyPanel">
                 <!-- Prawa strona obok zdjęc produktu - strona sprzedażowa -->
+                <!-- wybor rozmiaru produktu -->
+                <form action="selPage.php" method="POST" class="checkSizeCss">
+                    <label for="rozmiar" class="sizeLabel">ROZMIAR</label>
+                    <select id="rozmiar" name="rozmiar">
+                        <option value="" class="wyburRozmiaru">wybierz Rozmiar</option>
+                        <option value="link do koszyka z php">56</option>
+                        <option value="link do koszyka z php">62</option>
+                        <option value="link do koszyka z php">68</option>
+                        <option value="link do koszyka z php">80</option>
+                    </select>
+                    <input type="submit" value="DO KOSZYKA" class="kupCss">
 
-                WYBIERZ ROZMIAR:
+                </form>
+
+
+
+                <!-- WYBIERZ ROZMIAR:
                 <div class="rozmZest">
                     <div class="rozmZest-size">
                         <p class=" rozmZest-p">56</p>
@@ -152,7 +167,7 @@
                     <div class="rozmZest-size">
                         <p class=" rozmZest-p">134</p>
                     </div>
-                </div>
+                </div> -->
                 <div class="cenaZest">
                     <p class="cenaZest-p">CENA: 40 zł.</p>
                     <div class="doKoszyka"><a class="doKoszyka-a" href="plik.php">DO KOSZYKA</a></div>
