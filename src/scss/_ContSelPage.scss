@@ -11,7 +11,7 @@
 // kontener produktu
 .ContSelProduct {
     width: calc($szerProd + 20px);
-    min-height: 530px;
+    min-height: 380px;
     margin-top: 2rem;
     padding:10px;
     display: flex;
@@ -30,7 +30,7 @@
 // pojedynczy produkt
 .divOpis{
 width: $szerProd;
-height: 80px;;
+height: 60px;;
 
 @media screen and (max-width: $mediaScreenWidth) {
 
@@ -77,9 +77,9 @@ width: $szerProd;
 .cenaZest{
     border-bottom: 2px solid $rozdzialProd;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     &-p{
         font-size: 16px;
         font-weight: 600;
@@ -124,7 +124,7 @@ border: 1px solid $rozdzialProd;
     height: 30px;
     text-align: center;
     padding-top: 4px;
-    background-color: rgb(233, 79, 22);
+    background-color:$zobaczBtn;
     &:hover{
         background-color:$rozdzialProd;
 
