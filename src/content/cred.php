@@ -1,6 +1,6 @@
 <!-- dane połączenia z bazą danych -->
 <?php
-$database = 'fm';
+$database = 'frommi_fm';
 $host ='localhost';
 $user='root';
 $password='';
